@@ -1,0 +1,31 @@
+
+.section{
+    display: flex;
+    margin: 30px;
+    border: medium solid gray;
+    padding: 10px;
+}
+
+.wrapper{
+   justify-content: center;
+    margin-right: 0px; 
+}
+
+.wrap{
+    justify-content: center;
+}
+
+h2{
+    margin: 20px;
+}
+
+h3{
+    display: inline-block;
+    margin-right: 30px; 
+    align-items: center;
+}
+
+h4{
+    display: inline-block;
+    margin-left: auto;
+}

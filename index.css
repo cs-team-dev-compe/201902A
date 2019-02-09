@@ -40,3 +40,16 @@ p{
     font-size: 20px;
     margin: 10px;
 }
+
+.btn{
+    height: 80px;
+    width: 160px;
+    color: #fffb44;
+    background-color: gray;
+    text-align: center;
+    margin: 10px;
+}
+
+#app{
+    text-align: center;
+}

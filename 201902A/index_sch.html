@@ -9,8 +9,8 @@
         <title>Document</title>
 
         <!-- ブートストラップCSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+            integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- jくえり -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
             crossorigin="anonymous"></script>
@@ -24,42 +24,59 @@
     </head>
 
     <body>
-            <div class="container-fluid">
-                    <div class="row">
-                        <nav class="col-12 navbar navbar-toggleable-md navbar-light navbar-inverse bg-info" style="min-height:60px">
-                            <!-- inverse：色反転、light：色明るめ ☝︎なぜかこの時はmdサイズ以下の時toggleつけ-->
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-        
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">映画一覧
-                                            <span class="sr-only">(current)</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">レビュー投稿</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">映画検索</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+        <div class="container-fluidt t">
+            <div class="row">
+                <nav class="col-12 navbar navbar-toggleable-md navbar-light navbar-inverse bg-secondary" style="min-height:60px">
+                    <!-- inverse：色反転、light：色明るめ ☝︎なぜかこの時はmdサイズ以下の時toggleつけ-->
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle-navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1">映画名</span>
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">映画一覧
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index_to.html">レビュー投稿</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">レビュー検索</a>
+                            </li>
+                        </ul>
                     </div>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </nav>
+            </div>
+        </div>
 
+        <form class="form-inline my-lg-0" action="search.php" method="post">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">作品名</span>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search">
+            </div>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search_btn">Search</button>
+        </form>
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="col-12 showName" name="title">「千と千尋の神隠し」</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-3 person ntitle">投稿者</p>
+                <p class="col-9 person ntitle">レビュー内容</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 person">genki</div>
+                <div class="col-9">おもしろかった！</div>
+            </div>
+        </div>
     </body>
 
 </html>

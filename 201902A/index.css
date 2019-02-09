@@ -19,14 +19,24 @@ h2{
     margin: 20px;
 }
 
-h3{
+.wrapper h3{
     display: inline-block;
     margin-right: 30px; 
     align-items: center;
     border-bottom:  medium solid #fffb44;
+    font-weight: bold; 
+}
+
+.tokosha{
+    display: inline-block;
+    justify-content: center;
 }
 
 h4{
     display: inline-block;
-    margin-left: auto;
+}
+
+p{
+    font-size: 20px;
+    margin: 10px;
 }

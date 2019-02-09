@@ -23,6 +23,7 @@ h3{
     display: inline-block;
     margin-right: 30px; 
     align-items: center;
+    border-bottom:  medium solid #fffb44;
 }
 
 h4{

@@ -5,11 +5,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
   <title>Document</title>
+
+  <!-- ブートストラップCSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <!-- jくえり -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <!-- jくえりのライブラリ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <!-- BSのjくえり -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-12 navbar navbar-toggleable-md navbar-light navbar-inverse bg-secondary" style="min-height:60px">
+        <!-- inverse：色反転、light：色明るめ ☝︎なぜかこの時はmdサイズ以下の時toggleつけ-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">映画一覧
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///Users/ishiitaiga/Documents/201902A/201902A/index_to.html#">レビュー投稿</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///Users/ishiitaiga/Documents/201902A/201902A/index_sch.html#">映画検索</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <article>
+    <header>
+      <h2>映画レビュ一覧</h2>
+    </header>
+    <section class="section">
+      <div class="wrap">
+
+        <div class="wrapper">
+          <h3>千と千尋の神隠し</h3>
+          <div class="tokosha">
+            投稿者:
+            <h4>石井</h4>
+          </div>
+        </div>
+        <div class="wrapper2">
+          <p>とてもよかった</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="section">
+      <div class="wrap">
+
+        <div class="wrapper">
+          <h3>ハウルの動く城</h3>
+          <div class="tokosha">
+            投稿者:
+            <h4>投稿者</h4>
+          </div>
+        </div>
+        <div class="wrapper2">
+          <p>すごくよかった</p>
+        </div>
+      </div>
+
+
+    </section>
+    <div id="app">
+      <button class="btn btnjs" onclick="location.href='file:///Users/ishiitaiga/Documents/201902A/201902A/index_to.html'">投稿する</button>
+      <button class="btn btnjs" onclick="location.href='file:///Users/ishiitaiga/Documents/201902A/201902A/index_sch.html'">検索する</button>
+      <script>
+        $(function () {
+          $(".btnjs").on({
+            'mouseover': function () {
+              $(this).animate({
+                fontSize: 30,
+                height: 120,
+                width: 240
+              }, 300);
+            },
+            'mouseout': function () {
+              $(this).animate({
+                fontSize: 16,
+                height: 80,
+                width: 160
+              }, 300);
+            }
+          })
+        })
+
+      </script>
+    </div>
+  </article>
 </body>
 
 </html>

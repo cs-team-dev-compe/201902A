@@ -21,6 +21,7 @@ p.ntitle {
     border-bottom: 3px double #008000;
     font-weight: bold;
     color:  rgb(208, 211, 13);
+<<<<<<< HEAD
 }
 #movie{
     color: black;
@@ -40,3 +41,6 @@ p.ntitle {
     color: #008000;
     border-radius: 3px;
 }
+=======
+ }
+>>>>>>> 2f61d642478ccfa4dc3230fb997639d62ce6bfa3

@@ -1,0 +1,42 @@
+
+.section{
+    display: flex;
+    margin: 30px;
+    border: medium solid gray;
+    padding: 10px;
+}
+
+.wrapper{
+   justify-content: center;
+    margin-right: 0px; 
+}
+
+.wrap{
+    justify-content: center;
+}
+
+h2{
+    margin: 20px;
+}
+
+.wrapper h3{
+    display: inline-block;
+    margin-right: 30px; 
+    align-items: center;
+    border-bottom:  medium solid #fffb44;
+    font-weight: bold; 
+}
+
+.tokosha{
+    display: inline-block;
+    justify-content: center;
+}
+
+h4{
+    display: inline-block;
+}
+
+p{
+    font-size: 20px;
+    margin: 10px;
+}

@@ -2,6 +2,45 @@
 *{
     margin: 0;
     padding: 0;
-
+    color: antiquewhite;
+    background-color: rgb(41, 32, 32);
 }
 
+.b-person{
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+.sch{
+    color: black;
+}
+
+p.ntitle {
+    /* margin: 0px 0px 5px 0px;
+    padding: 3px 0px; */
+    border-bottom: 3px double #008000;
+    font-weight: bold;
+    color:  rgb(208, 211, 13);
+<<<<<<< HEAD
+}
+#movie{
+    color: black;
+}
+.btt{
+    background: ;
+    position: fixed;
+    bottom: 0;
+}
+#movie{
+    background: rgb(41, 32, 32);
+    border: solid 2px green;
+    padding: 5px;
+    padding-left:  10px;
+    padding-right: 10px; 
+    margin-left: 10px;
+    color: #008000;
+    border-radius: 3px;
+}
+=======
+ }
+>>>>>>> 2f61d642478ccfa4dc3230fb997639d62ce6bfa3

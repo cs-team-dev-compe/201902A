@@ -20,7 +20,25 @@
         <!-- BSのjくえり -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
             crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" language="javascript">
+            function onButtonClick() {
+                    target1 = document.getElementById("output");
+                    target1.innerText = document.forms.id_fm.id_search.value;
+                    let x= target.innerText;
+            }
+        </script> -->
+        <script type="text/javascript">
+            function Sample1(){
+                var hoge = fm.search.value;  //テキストエリアの値を取得
+                const head= "https://eiga.com/search/";
+                let url= head+hoge; 
+                target = document.getElementById("movie");
+                target.href= url;
 
+            }
+        </script>
+
+        
     </head>
 
     <body>
@@ -53,13 +71,16 @@
             </div>
         </div>
 
-        <form class="form-inline my-lg-0" action="search.php" method="post">
+        <form class="form-inline my-lg-0" action="search.php" method="post" name="fm" id="id_fm">
             <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">作品名</span>
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search" id="id_search" value="" onkeyup="Sample1();" onclick="onButtonClick();">
+                
             </div>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search_btn">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search_btn" >Search</button>
+            <a class= "" type="button-square-little-rich" value="映画.com" " id="movie">映画.com</a>
         </form>
+        <div id="output"></div>
         <div class="container-fluid">
             <div class="row">
                 <h2 class="col-12 showName" name="title">「千と千尋の神隠し」</h2>
@@ -77,6 +98,11 @@
                 <div class="col-9">おもしろかった！</div>
             </div>
         </div>
+        <footer>
+            <div class="row">
+                <a href="#" class="btn btn-secondary btn-lg btn-block btt">Go to TOP</a>
+            </div>
+        </footer>
     </body>
 
 </html>

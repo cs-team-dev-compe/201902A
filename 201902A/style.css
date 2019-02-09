@@ -21,4 +21,22 @@ p.ntitle {
     border-bottom: 3px double #008000;
     font-weight: bold;
     color:  rgb(208, 211, 13);
- }
+}
+#movie{
+    color: black;
+}
+.btt{
+    background: ;
+    position: fixed;
+    bottom: 0;
+}
+#movie{
+    background: rgb(41, 32, 32);
+    border: solid 2px green;
+    padding: 5px;
+    padding-left:  10px;
+    padding-right: 10px; 
+    margin-left: 10px;
+    color: #008000;
+    border-radius: 3px;
+}
